@@ -3,28 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band Template</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
     <header>
-        <ul class="nav">
-            <li class="item">Home</li>
-            <li class="item">Band</li>
-            <li class="item">Tour</li>
-            <li class="item">Contact</li>
-            <li class="item">More<i class="fa-solid fa-caret-down"></i> </li>
-        </ul>
+        <div>
+            <ul class="nav">
+                <li><a class="item" href=".">Home</a></li>
+                <li><a class="item" href="#introduce">Band</a></li>
+                <li><a class="item" href="#buy-ticket">Tour</a></li>
+                <li><a class="item" href="#contact">Contact</a></li>
+                <li class="item">More
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="sub-nav">
+                        <li class="item">Merchandise</li>
+                        <li class="item">Extras</li>
+                        <li class="item">Media</li>
+                    </ul>
+                 </li>
+            </ul>
+        </div>
+        <div>
+            <i class="item hover-red fa-solid fa-magnifying-glass "></i>
+        </div>
     </header>
-    <div id="slider"></div>
+    <div id="slider">
+    </div>
     <div id="main">
-        <div id="infor">
+        <div id="introduce">
             <div class="discription">
                 <h1 class="title">The band</h1>
                 <p class="slogan">We love music</p>
-                <p>
+                <p class="detail">
                     We have created a fictional band website. Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -33,12 +49,23 @@
                     sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.></p>
+                    consequat.
+                </p>
             </div>
-            <div class="member">
-                <img src="./asset/images/bandmember.jpg">
-                <img src="./asset/images/bandmember.jpg">
-                <img src="./asset/images/bandmember.jpg">
+            <div class="team">
+                <div class="member">
+                    <p>name</p>
+                    <img src="./asset/images/bandmember.jpg">
+                </div>
+                <div class="member">
+                    <p>name</p>
+                    <img src="./asset/images/bandmember.jpg">
+                </div>
+                <div class="member">
+                    <p>name</p>
+                    <img src="./asset/images/bandmember.jpg">
+                </div>
+
             </div>
         </div>
         <div id="buy-ticket">
@@ -46,39 +73,46 @@
             <p class="slogan">Remember to book your tickets!</p>
             <ul id="ticket-current">
                 <li class="month">
-                    September 
-                    <p class="status">sold out</p>
+                    September
+                    <p class="no-more">Sold out</p>
                 </li>
                 <li class="month">
                     October
-                    <p class="status">Sold out</p>
+                    <p class="no-more">Sold out</p>
                 </li>
                 <li class="month">
                     November
-                    <p class="status">3</p>
+                    <p class="remain">3</p>
                 </li>
             </ul>
             <div class="infor-events">
                 <div>
                     <img src="./asset/images/newyork.jpg">
-                    <p class="place">New York</p>
-                    <p class="date">Fri 27 Nov 2016</p>
-                    <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button>Buy Tickets</button>
+                    <div class="detail">
+                        <p class="place">New York</p>
+                        <p class="time">Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
                 </div>
                 <div>
                     <img src="./asset/images/paris.jpg">
-                    <p class="place">Paris</p>
-                    <p class="date">Sat 28 Nov 2016</p>
-                    <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button>Buy Tickets</button>
+                    <div class="detail">
+                        <p class="place">Paris</p>
+                        <p class="time">Sat 28 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
                 </div>
                 <div>
+
                     <img src="./asset/images/sanfran.jpg">
-                    <p class="place">San Francisco</p>
-                    <p class="date">Sun 29 Nov 2016</p>
-                    <p class="detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button>Buy Tickets</button>
+                    <div class="detail">
+                        <p class="place">San Francisco</p>
+                        <p class="time">Sun 29 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,45 +120,45 @@
             <h1 class="title">contact</h1>
             <p class="slogan">Fan? Drop a note!</p>
             <div id="infor-contact">
-                <div class="author-contact">
+                <div class="author">
                     <p>
                         <i class="fa-solid fa-location-dot"></i>
-                        Chicago, US
+                        <span>Chicago, US</span>
                     </p>
                     <p>
                         <i class="fa-solid fa-phone"></i>
-                        Phone: +00 151515
+                        <span>Phone: +00 151515</span>
                     </p>
                     <p>
                         <i class="fa-solid fa-envelope"></i>
-                         Email: mail@mail.com
+                        <span>Email: mail@mail.com</span>
                     </p>
 
                 </div>
                 <div class="user">
-                    <form action="">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Message">
-                    <input type="submit" value="Send">
+                    <form action="https://www.w3schools.com/action_page.php">
+                        <input required class="name" type="text" placeholder="Name">
+                        <input required class="email" type="text" placeholder="Email">
+                        <input required type="text" placeholder="Message">
+                        <input class="submit" type="submit" value="Send">
                     </form>
                 </div>
             </div>
+            
         </div>
+        <img src="./asset/images/map.jpg">
     </div>
     <footer>
-        <img src="./asset/images/map.jpg">
+      
         <div class="social-internet">
-            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-snapchat"></i>
             <i class="fa-brands fa-pinterest-p"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css </a></p>
-
-
         </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css </a></p>
     </footer>
 
 
