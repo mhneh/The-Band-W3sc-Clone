@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 
+
 </head>
 
 <body>
+    <div id="cover-layer">
+
+    </div>
     <header>
         <div>
             <ul class="nav">
-                <li><a class="item" href=".">Home</a></li>
+                <li><a class="item" href="#">Home</a></li>
                 <li><a class="item" href="#introduce">Band</a></li>
                 <li><a class="item" href="#buy-ticket">Tour</a></li>
                 <li><a class="item" href="#contact">Contact</a></li>
@@ -26,7 +30,7 @@
                         <li class="item">Extras</li>
                         <li class="item">Media</li>
                     </ul>
-                 </li>
+                </li>
             </ul>
         </div>
         <div>
@@ -34,6 +38,28 @@
         </div>
     </header>
     <div id="slider">
+        <div class="my-slide">
+            <img src="./asset/images/la.jpg">
+            <div>
+                <h2>los angeles</h2>
+                <p>We had the best time playing at Venice Beach!</p>
+            </div>
+        </div>
+        <div class="my-slide">
+            <img src="./asset/images/ny.jpg">
+            <div>
+                <h2>new york</h2>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+        <div class="my-slide">
+            <img src="./asset/images/chicago.jpg">
+            <div>
+                <h2>chicago</h2>
+                <p>Thank you Chicago - A night we wont's forget.</p>
+            </div>
+        </div>
+
     </div>
     <div id="main">
         <div id="introduce">
@@ -92,7 +118,7 @@
                         <p class="place">New York</p>
                         <p class="time">Fri 27 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button>Buy Tickets</button>
+                        <button class="buy-button">Buy Tickets</button>
                     </div>
                 </div>
                 <div>
@@ -101,7 +127,7 @@
                         <p class="place">Paris</p>
                         <p class="time">Sat 28 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button>Buy Tickets</button>
+                        <button class="buy-button">Buy Tickets</button>
                     </div>
                 </div>
                 <div>
@@ -111,7 +137,7 @@
                         <p class="place">San Francisco</p>
                         <p class="time">Sun 29 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button>Buy Tickets</button>
+                        <button class="buy-button">Buy Tickets</button>
                     </div>
                 </div>
             </div>
@@ -144,12 +170,12 @@
                     </form>
                 </div>
             </div>
-            
+
         </div>
         <img src="./asset/images/map.jpg">
     </div>
     <footer>
-      
+
         <div class="social-internet">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -160,7 +186,35 @@
         </div>
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css </a></p>
     </footer>
+    <div id="ticket-modal">
+        <div class="header">
+            <button class="close"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+            <div class="title"><i class="fa fa-suitcase w3-margin-right"></i>
+                <span>tickets</span>
+            </div>
+        </div>
+        <form action="#">
+            <div class="field">
+                <div><i class="fa-solid fa-cart-shopping"></i>
+                    <span>Ticket, $15 per person</span>
+                </div>
+                <div><input type="text" placeholder="How many?"></div>
+            </div>
+            <div class="field">
+                <div><i class="fa-solid fa-user"></i>
+                    <span>Send To</span>
+                </div>
+                <div><input type="text" placeholder="Enter email"></div>
+            </div>
+            <button>Pay ✔</button>
+        </form>
+        <div class="footer">
+            <div><button class="close">Close <i class="fa-sharp fa-solid fa-xmark"></i></button></div>
+            <div>Need <a href="#">help</a></div>
+        </div>
 
+    </div>
+    <script src="./main.js"></script>
 
 </body>
 
