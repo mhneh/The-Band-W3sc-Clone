@@ -44,5 +44,15 @@ function setSlider() {
 
 }
 setSlider();
-
-
+var chose = document.querySelector("header .after button")
+var subNav_after = document.querySelector("header .after  .sub-nav")
+var style = window.getComputedStyle(subNav_after)
+subNav_after.style.display = "none"
+chose.addEventListener("click",function(event){
+    var display = style.getPropertyValue("display")
+    if(display === "block")
+        subNav_after.style.display = "none"
+    else
+        subNav_after.style.display = "block"
+    
+})
