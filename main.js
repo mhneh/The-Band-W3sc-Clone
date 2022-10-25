@@ -56,3 +56,10 @@ chose.addEventListener("click",function(event){
         subNav_after.style.display = "block"
     
 })
+
+var subNav = document.querySelectorAll("header .after .sub-nav .item")
+for (let element of subNav){
+    element.addEventListener("click",function(event){
+        subNav_after.style.display = "none"
+    })
+}
